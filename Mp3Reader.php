@@ -25,6 +25,9 @@ class Mp3Reader{
     public function getTags(){
         $this->getID3->setOption(array('encoding' => $this->pageEncoding));
         $fileInfo = $this->getID3->analyze($this->fileName);
+        if(!array_key_exists($fileInfo["tags_html"]) || !array_key_exists($fileInfo["tags_html"]["id3v2"])){
+          throw new \Exception('Unable to Read tag data');
+        }
         $this->tagData = $fileInfo["tags_html"]["id3v2"];
         $this->formatTags();
     }
