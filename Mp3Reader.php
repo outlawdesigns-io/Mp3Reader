@@ -84,7 +84,7 @@ class Mp3Reader{
         foreach($this->tagData as $key=>$value){
             foreach($value as $subKey=>$val){
                 if(!in_array($key,$this->knownTags)){
-                    die('New Tag Found: ' . $key);
+                    throw new \Exception('New Tag Found: ' . $key);
                 }
                 if(in_array($key,$this->dbTags)){
                     $tagData[$key] = $val;
