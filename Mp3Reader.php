@@ -12,7 +12,54 @@ class Mp3Reader{
     public $dir;
     public $tagData;
     public $newTagData;
-    public $knownTags = array("year","track_number","band","album","genre","title","composer","artist","language","text","date","encoded_by","encoder_settings","publisher","url_user","part_of_a_set","music_cd_identifier","length","comment","unsynchronised_lyric","part_of_a_compilation","copyright_message","content_group_description","release_time","recording_time","conductor","file_type","media_type","url_artist","size","original_artist","bpm","linked_information","commercial_information","original_year","isrc","remixer","initial_key","lyricist","album_sort_order","performer_sort_order","title_sort_order","terms_of_use","url_file","tagging_time");
+    public $knownTags = array(
+      "year",
+      "track_number",
+      "band",
+      "album",
+      "genre",
+      "title",
+      "composer",
+      "artist",
+      "language",
+      "text",
+      "date",
+      "encoded_by",
+      "encoder_settings",
+      "publisher",
+      "url_user",
+      "part_of_a_set",
+      "music_cd_identifier",
+      "length",
+      "comment",
+      "unsynchronised_lyric",
+      "part_of_a_compilation",
+      "copyright_message",
+      "content_group_description",
+      "release_time",
+      "recording_time",
+      "conductor",
+      "file_type",
+      "media_type",
+      "url_artist",
+      "size",
+      "original_artist",
+      "bpm",
+      "linked_information",
+      "commercial_information",
+      "original_year",
+      "isrc",
+      "remixer",
+      "initial_key",
+      "lyricist",
+      "album_sort_order",
+      "performer_sort_order",
+      "title_sort_order",
+      "terms_of_use",
+      "url_file",
+      "tagging_time",
+      "totaltracks"
+    );
     public $dbTags = array("title","artist","album","year","track_number","genre","band","length","publisher","bpm");
 
     public function __construct(){
