@@ -60,7 +60,9 @@ class Mp3Reader{
       "tagging_time",
       "totaltracks",
       "encoding_time",
-      "url_source"
+      "url_source",
+      "url_publisher",
+      "url_publisher"
     );
     public $dbTags = array("title","artist","album","year","track_number","genre","band","length","publisher","bpm");
 
